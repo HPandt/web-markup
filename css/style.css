@@ -24,7 +24,6 @@ ul {
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
   }
@@ -58,7 +57,7 @@ p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#tag{
+.footer{
     background-color: brown;
     width: 100%;
     text-align: center;
