@@ -1,7 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body{
-    margin: 0;
-    background-color: blanchedalmond;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(108, 88, 76);
+}
+
+p{
+  color: #dde5b6;
+  
+}
+
+footer, header{
+  min-height: 40px;
+  
+}
+
+section{
+  display: flex;
+  flex-grow: 1;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.icon{
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
+  padding-left: 5px ;
+  padding-top: 5px;
+}
+
+.home_article{
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+section:nth-child(3), p{
+  flex-direction: row-reverse;
+  padding-left: 20px;
+}
+
+
+
+
+.home_pictures1, figcaption{
+  margin-left: 20px;
+  
+}
+
+#secret{
+  opacity: 0;
+
+}
+
+section  .box:hover{
+  background-color: rgb(255, 25, 0);
+  opacity: 1;
+  text: black;
+  transform: scale();
+}
+
+section  .box:hover #secret {
+  background-color: rgb(255, 25, 0);
+  opacity: 1;
+  text: black;
+  transition-duration: 6ms;
+}
+
+section .box:hover:nth-child(2){
+  background-color: #333;
+}
+
+
+
+.box{
+  text-align: center;
+  font-size: larger;
+}
+
+.left{
+  width: 25%;
+  background-color: chocolate;
+}
+
+.center{
+  width: 50%;
+  background-color: brown;
+}
+
+.right{
+  width: 25%;
+  background-color: burlywood;
+}
+
+nav{
+  background-color: #adc178;
+  color: black;
 }
 
 ul {
@@ -9,24 +111,33 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    
+    
   }
   
-  li {
-    float: left;
-  }
+li {
+  float: left;
+  border-right: 1px, solid black;
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+}
+
+li:nth-last-child(1) {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+
+
+li a:hover {
+  background-color: #a98467;
+}
 
 #text{
     color: brown;
@@ -52,10 +163,6 @@ h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-p{
-    color: teal;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
 .footer{
     background-color: brown;
