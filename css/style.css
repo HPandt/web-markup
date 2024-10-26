@@ -3,11 +3,12 @@
   padding: 0;
 }
 
-@media (max-width: 1890px) {
+@media (max-width: 1868px) {
   
 
   body {
     display: flex;
+    width: 100%;
     flex-direction: column;
     background-color: rgb(108, 88, 76);
     color: #dde5b6;
@@ -74,11 +75,12 @@
 
   /* Global Card Layout */
   #row {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 50px;
+    margin-left: 50px;
   }
 
   .card {
@@ -148,7 +150,7 @@
   }
 
   section {
-    width: 100%; 
+    width: 90%; 
     display: flex;
     justify-content: center;
     padding: 25px;
@@ -241,15 +243,15 @@
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    width: 100%; 
+    width: 70%; 
     margin: 50px auto;
     position: relative;
   }
   
   section img {
     order: -1; /* Make image appear at the top */
-    width: 90%; 
-    height: auto;
+    width: 400px; 
+    height: 400px;
     margin-bottom: 20px;
   }
 
@@ -258,14 +260,15 @@
     padding-left: 20px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 45%;
+    height: auto;
   } 
   
   section:nth-child(3) img {
     order: -1;
     width: 190%;
     height: 250px;
-    margin-left: -50%;
+    margin-left: -40%;
     margin-bottom: 10px;
   }
   
@@ -307,7 +310,7 @@
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    width: 100%; 
+    width: 75%; 
     color: black;
   }
 
