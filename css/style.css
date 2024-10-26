@@ -315,15 +315,6 @@
       margin-top: 10px;
       color: #dde5b6;
     }
-    
-  
-    #form {
-      background-color: #a98467;
-      margin: 250px 300px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
 
     #row {
       display: flex;
