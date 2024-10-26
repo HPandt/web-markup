@@ -60,7 +60,7 @@
       }
 
     .burger-icon {
-        display: none; /* Hidden by default */
+        display: none;
         font-size: 30px;
         cursor: pointer;
         padding: 10px;
@@ -112,10 +112,10 @@
         letter-spacing: normal;
         word-spacing: normal;
         position: relative;
-        flex-direction: column; /* Align text and image side-by-side */
+        flex-direction: column;
         float: left;
-        align-items: center; /* Center items vertically */
-        max-width: 900px; /* Control the width of the article */
+        align-items: center; 
+        max-width: 900px;
         margin: 20px 0; 
     }
 
@@ -129,13 +129,13 @@
     }
 
     article a:visited {
-        color: #adc178; /* Change color when clicked */
-        text-decoration: underline; /* Optional underline */
+        color: #adc178;
+        text-decoration: underline;
     }
     
     article a:visited {
-        color: #adc178; /* Change color when clicked */
-        text-decoration: underline; /* Optional underline */
+        color: #adc178;
+        text-decoration: underline;
     }
 
     article h1{
@@ -211,7 +211,7 @@
     }
     
     table tr:nth-child(odd) {
-        background-color: #FFF ; /* Or any other color you prefer */
+        background-color: #FFF ;
         color: black;
     }
 
@@ -240,9 +240,9 @@
         color: black;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centers all elements within the fieldset */
-        height: 90%; /* Adjust as needed */
-        width: 90%; /* Adjust width as needed */
+        align-items: center;
+        height: 90%;
+        width: 90%;
         padding: 10px 20px;
         border: 1px solid #a98467;
     }
@@ -317,7 +317,7 @@
     height: 50px;
     }
 }
-
+/*size for mobile*/
 @media (max-width: 768px) {
 
     .banner {
@@ -364,19 +364,19 @@
 
     section {
         display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center content horizontally */
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        width: 100%; /* Ensure section takes full width */
-        margin: 20px auto; /* Center section with margin */
+        width: 100%;
+        margin: 20px auto;
         position: relative;
     }
       
     section img {
         order: -1; /* Make image appear at the top */
-        width: 400px; /* Ensure image takes up most of the width */
-        height: 400px; /* Keep the image's aspect ratio */
-        margin-bottom: 20px; /* Space between image and text */
+        width: 400px;
+        height: 400px;
+        margin-bottom: 20px;
     }
   
     section:nth-child(4) {
@@ -388,15 +388,15 @@
     }
     
     section:nth-child(4) img {
-        width: 400px; /* Set width to fit within container */
-        height: 400px; /* Maintain aspect ratio */
+        width: 400px;
+        height: 400px;
         margin: 0 auto; /* Center horizontally */
         text-indent: -5rem;
     }
       
     section h2, section p, figcaption {
-        text-align: center; /* Center text content */
-        margin: 5px auto; /* Add margins around text */
+        text-align: center;
+        margin: 5px auto;
     }
 
     article h1{
@@ -422,12 +422,12 @@
     }
       
     section h2, p {
-        width: 90%; /* Make the text area wider */
-        max-width: 700px; /* Set a maximum width to avoid the text being too wide */
+        width: 90%; 
+        max-width: 700px; 
       }
 
     article {
-        flex-direction: column; /* Stack text and image vertically on smaller screens */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -450,9 +450,9 @@
         color: black;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centers all elements within the fieldset */
-        height: 90%; /* Adjust as needed */
-        width: 80%; /* Adjust width as needed */
+        align-items: center;
+        height: 90%; 
+        width: 80%; 
         padding: 10px 20px;
         border: 1px solid #a98467;
     }

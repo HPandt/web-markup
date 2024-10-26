@@ -1,5 +1,5 @@
 Student name: Hunter Pandt
 Student number: 726523
-Student class: 
-GitHub Repository:
-GitHub Pages URL:
+Student class: HAIT24FT1A
+GitHub Repository: https://github.com/HPandt/web-markup.git
+GitHub Pages URL: https://hpandt.github.io/
