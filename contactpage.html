@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Hunter Pandt">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheckItOut</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body>
     <header>
         <nav>
+            <span class="burger-icon" onclick="toggleMenu()">&#9776;</span>
             <ul>
                 <li>
                     <img class="icon" src="img/Logo_maker_project-1.png" alt="website logo of caslte&bird" title="website logo">
                 </li>
                 <li>
-                    <a class="active" href="index.html">Home</a> 
+                    <a  href="index.html">Home</a> 
                 </li>
                 <li>
                 <a href="bookstore.html">the Bookstore cafe</a> 
@@ -23,34 +25,36 @@
                     <a href="emma'shof.html">Emma's hof</a> 
                 </li>
                 <li>
-                <a href="japanesegarden.html">japanese Garden</a> 
+                    <a href="japanesegarden.html">japanese Garden</a> 
                 </li>
                 <li>
-                <a href="thefiddler.html">The fiddler</a> 
+                    <a href="thefiddler.html">The fiddler</a> 
                 </li>
                 <li>
-                    <a href="contactpage.html">Contact</a>
+                    <a class="active" href="contactpage.html">Contact</a>
                 </li>
             </ul>
         </nav>   
       </header>
       <section id="form">
             <form action="https://coolinhollanddemo.azurewebsites.net" method="post">
-                <label for="gender">Mr/Ms: </label>
-                <select name="gender" id="gender">
-                    <option value="Mr.">Mr.</option>
-                    <option value="Ms.">Ms.</option>
-                </select>
-                <label for="username">Name: </label>
-                <input type="text" id="username" name="username" required>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <fieldset>
+                    <legend> <strong>Contact Form</strong></legend>
+                    <label for="gender">Mr/Ms: </label>
+                    <select name="gender" id="gender">
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                    </select>
+                    <label for="username">Name: </label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
 
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required></textarea>
-                
-                <input type="submit" value="Submit">
-
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </fieldset>
             </form>
       </section>
       

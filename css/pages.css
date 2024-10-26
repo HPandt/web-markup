@@ -1,128 +1,322 @@
+
 *{
-    margin: 0;
-    padding: 0;
-  
+        margin: 0;
+        padding: 0;
+}
+@media (max-width: 1890px) 
+{  
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(108, 88, 76);
+        color: #dde5b6;
+      }
+    
+      nav {
+        background-color: #adc178;
+        color: black;
+      }
+    
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    
+      li {
+        float: left;
+        border-right: 2px solid black;
+      }
+    
+      li:nth-last-child(1) {
+        float: right;
+        border-left: 2px solid black;
+        border-right: 0px;
+      }
+    
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
+    
+      li a:hover {
+        background-color: #a98467;
+      }
+    
+      .active{
+        background-color: #a98467;
+      }
+    
+      .icon {
+        width: 40px;
+        height: auto;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+      }
+
+    .burger-icon {
+        display: none; /* Hidden by default */
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .banner {
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+        margin: 0px;
+        background-image: url("/img/banner.webp");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+        font-size: 24px;    
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-bottom: 2px solid #a98467;
+        border-width: 100%;
+    }
+
+    section:nth-child(4){
+        flex-direction: row-reverse;
+    }
+
+    section:nth-child(4) article h2{
+        margin-left: 3rem;
+        line-height: 2rem;
+    }
+
+    section:nth-child(4) article p{
+        margin-left: 25px;
+    } 
+    
+    article {
+        display: flex; 
+        width: 500px;
+        line-height: 150%;
+        letter-spacing: normal;
+        word-spacing: normal;
+        position: relative;
+        flex-direction: column; /* Align text and image side-by-side */
+        float: left;
+        align-items: center; /* Center items vertically */
+        max-width: 900px; /* Control the width of the article */
+        margin: 20px 0; 
+    }
+
+    article p a{
+        color: #dde5b6; 
+    }
+
+    article a:hover{
+        color: #dde5b6;
+        font-size: large;
+    }
+
+    article a:visited {
+        color: #adc178; /* Change color when clicked */
+        text-decoration: underline; /* Optional underline */
+    }
+    
+    article a:visited {
+        color: #adc178; /* Change color when clicked */
+        text-decoration: underline; /* Optional underline */
+    }
+
+    article h1{
+        color: #dde5b6;
+        font-size: 260%;
+        text-transform: uppercase;
+        text-indent: -2rem;
+        font-family: 'Times New Roman', Times, serif; 
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    article h2 {
+        color: #dde5b6;
+        font-size: 250%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-indent: -1rem;
+        font-family: 'Times New Roman', Times, serif;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    figure {
+        margin-left: 20px;
+    }
+    
+    figure img {
+        float: right;
+        width: 400px;
+        height: 400px;
+    }
+    
+    figcaption {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #adc178;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        position: fixed;
+      }
+    
+      footer p {
+        padding: 1%;
+        color: black;
+      }
+
+    aside{
+        right: 0;
+        position: absolute;
+    }
+
+    aside img{
+    float: right;
+    width: 50px;
+    height: 50px;
+    }
 }
 
-body{
-display: flex;
-flex-direction: column;
-background-color: rgb(108, 88, 76);
-color: #dde5b6;
-justify-content: center;
-/* background-image: linear-gradient(180deg, rgb(108, 88, 76), yellow); */
-}
+@media (max-width: 768px) {
 
-nav{
-background-color: #adc178;
-color: black;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-float: left;
-border-right: 2px solid black;
-
-}
-/*Thos the contact list item, and its setting it to the right side of the screen */
-li:nth-last-child(1) {
-float: right;
-border-left: 2px solid black;
-border-right: 0px;
-}
-
-li a {
-display: block;
-color: black;
-text-align: center;
-text-decoration: none;
-padding: 14px 16px;
-}
-
-li a:hover {
-background-color: #a98467;
-}
-
-.icon{
-width: 40px;
-height: auto;
-margin-right: 5px;
-padding-left: 5px ;
-padding-top: 5px;
-}
-
-.banner {
-width: 100%;
-height: 200px;
-margin: 0px;
-background-image: url("/img/banner.webp");
-background-size: cover;
-background-position: center;
-color: white;
-text-align: center;
-line-height: 200px;
-font-size: 24px;
-}
-
-@media (max-width: 600px) {
     .banner {
         height: 100px;
         font-size: 18px;
         line-height: 100px;
     }
-}
 
-section {
-    width: 70%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(108, 88, 76);
+      color: #dde5b6;
+    }
+
+    ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
   
-section h1{
-    position: absolute;
-
-}
-
-
-section img{
-    width: 400px;
-    height: 400px;
-    margin-left: 15px;
-}
-
-figcaption{
-    margin-left: 15px;
-}
-
-article{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-article img{
-    float: right;
-}
-
-footer{
-background-color: #adc178;
-width: 100%;
-text-align: center;
-bottom: 0;
-position: fixed;
-}
-
-footer p {
-padding: 1%;
-color: black;
-}
+    li {
+      float: none;
+      border-right: none;
+      border-bottom: 1px solid black;
+    }
   
+    li:nth-last-child(1) {
+      float: none;
+      border-left: none;
+      border-bottom: 0px;
+    }
+  
+    /* Show the burger icon */
+    .burger-icon {
+      display: block;
+    }
+  
+    /* Show the menu when the burger icon is clicked */
+    ul.active {
+      display: flex;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center content horizontally */
+        justify-content: center;
+        width: 100%; /* Ensure section takes full width */
+        margin: 20px auto; /* Center section with margin */
+        position: relative;
+      }
+      
+      section img {
+        order: -1; /* Make image appear at the top */
+        width: 400px; /* Ensure image takes up most of the width */
+        height: 400px; /* Keep the image's aspect ratio */
+        margin-bottom: 20px; /* Space between image and text */
+      }
+  
+      section:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    section:nth-child(4) img {
+        width: 400px; /* Set width to fit within container */
+        height: 400px; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center horizontally */
+        text-indent: -5rem;
+    }
+      
+      section h2, section p, figcaption {
+        text-align: center; /* Center text content */
+        margin: 5px auto; /* Add margins around text */
+      }
+
+      article h1{
+        color: #dde5b6;
+        font-size: 220%;
+        text-transform: uppercase;
+        text-indent: -2rem;
+        font-family: 'Times New Roman', Times, serif; 
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    article h2 {
+        color: #dde5b6;
+        font-size: 200%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-indent: -1rem;
+        font-family: 'Times New Roman', Times, serif;
+        justify-content: center;
+        flex-direction: column;
+    }
+      
+      section h2, p {
+        width: 90%; /* Make the text area wider */
+        max-width: 700px; /* Set a maximum width to avoid the text being too wide */
+      }
+
+    article {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+        align-items: center;
+    }
+
+    article h2, article p {
+        text-align: center;
+        margin: 10px;
+    }
+}
+
